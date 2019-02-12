@@ -37,5 +37,8 @@ public class LinkListTest {
         linkList.insertWithPosition(1, 999);
         System.out.println(linkList.toString());
         assertEquals("999,1,2,3,4,99,5,6,7,8,", linkList.toString());
+        linkList.insertWithIndex(0, 666);
+        System.out.println(linkList);
+        assertEquals("666,999,1,2,3,4,99,5,6,7,8,", linkList.toString());
     }
 }
